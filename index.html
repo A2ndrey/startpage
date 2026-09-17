@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лендинг</title>
+    <title>Внутренние ресурсы</title>
     <style>
         * {
             margin: 0;
@@ -114,7 +115,8 @@
         /* Сетка карточек */
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
+            /*grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));*/
             gap: 24px;
             margin-bottom: 40px;
         }
@@ -254,12 +256,23 @@
             </a>
 
             <!-- Реестр доработок -->
+            <!-- 
             <a href="http://192.168.120.60/registry/" class="card" target="_blank">
                 <div class="card-icon">
                     <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
                 </div>
                 <div class="card-title">Реестр доработок</div>
                 <div class="card-desc">Учёт и статус задач по доработке систем</div>
+                <div class="card-arrow">Перейти →</div>
+            </a>
+            -->
+            <!-- FTP -->
+            <a href="ftp://192.168.120.60/" class="card" target="_blank">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><path d="M12 11v6"/><path d="M9 14l3 3 3-3"/></svg>
+                </div>
+                <div class="card-title">FTP-сервер</div>
+                <div class="card-desc">Файловое хранилище и обмен документами</div>
                 <div class="card-arrow">Перейти →</div>
             </a>
 
@@ -280,16 +293,6 @@
                 </div>
                 <div class="card-title">YouTrack</div>
                 <div class="card-desc">Система управления задачами и баг-трекер</div>
-                <div class="card-arrow">Перейти →</div>
-            </a>
-
-            <!-- FTP -->
-            <a href="ftp://192.168.120.60/" class="card" target="_blank">
-                <div class="card-icon">
-                    <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><path d="M12 11v6"/><path d="M9 14l3 3 3-3"/></svg>
-                </div>
-                <div class="card-title">FTP-сервер</div>
-                <div class="card-desc">Файловое хранилище и обмен документами</div>
                 <div class="card-arrow">Перейти →</div>
             </a>
         </div>
